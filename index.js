@@ -2,11 +2,14 @@ const express = require("express");
 const socket = require("socket.io");
 
 // App setup
-const PORT = 8080;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8080;
+}
 const app = express();
-const server = app.listen(PORT, function () {
-  console.log(`Listening on port ${PORT}`);
-  console.log(`http://localhost:${PORT}`);
+const server = app.listen(port, function () {
+  console.log(`Listening on port ${port}`);
+  console.log(`http://localhost:${port}`);
 });
 
 // Static files
