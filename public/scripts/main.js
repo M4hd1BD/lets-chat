@@ -63,7 +63,7 @@ socket.on("user disconnected", function (userName) {
 
 const messageForm = document.querySelector(".message_form");
 const messageBox = document.querySelector(".messages__history");
-const mainInbox = document.querySelector(".inbox__messages");
+const mainInbox = document.querySelector(".messageContainer");
 
 const addNewMessage = ({ user, message }) => {
   const time = new Date();

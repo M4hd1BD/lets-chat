@@ -17,9 +17,14 @@
 
         <div class="col-12">
 
+          <div class="text-center my-5">
+            <h1 class="my-3">Lets Chat</h1>
+            <h4>All codes available at <a href="https://github.com/M4hd1BD/lets-chat" target="_blank">Github</a></h4>
+          </div>
+
           <form class="unameForm" method="post">
-            <input type="text" name="uName" placeholder="Enter a unique username" class="unameBox p-3" autofocus>
-            <button type="submit" name="unameSubmit" class="unameSubmit p-3">Let's go</button>
+            <input type="text" name="uName" placeholder="Enter a unique username" class="unameBox p-3 mt-3" autofocus>
+            <button type="submit" name="unameSubmit" class="unameSubmit p-3 mt-3">Let's go</button>
             <p style="display:none;color:#D04336;" class="warningMessage font-weight-bold mt-3 lead">Someone with this username is already online!</p>
           </form>
 
@@ -28,45 +33,57 @@
       </div>
 
       <div class="mainWindowContainer" style="display:none;">
-        <div class="row mainWindow vh-100">
 
-          <div class="col-2 activeUsers py-4 px-5 h-100">
+        <div class="row vh-100">
+
+          <div class="col-sm-4 col-md-3 col-lg-2 d-none activeUsers d-sm-block py-4 px-5 h-100 mr-5">
 
             <h2 class="py-5 mb-5">Active Users</h2>
 
-            <div class="onlineUsers">
+            <div class="onlineUsers w-100">
 
             </div>
 
           </div>
 
-          <div class="col-1 h-100">
+          <div class="col-sm-6 col-md-7 col-lg-8 messages h-100 ml-md-5">
 
-          </div>
+            <div class="row messageContainer">
 
-          <div class="col-8 messages h-100">
+              <div class="col-12">
 
-            <div class="inbox__messages clearfix">
-              <div class="messages__history my-5 clearfix"></div>
-              <div class="fallback"></div>
+                <div class="inbox__messages clearfix">
+                  <div class="messages__history my-5 clearfix"></div>
+                  <div class="fallback"></div>
+                </div>
+
+              </div>
+
             </div>
 
-            <div class="messageForm w-100">
-              <form class="message_form my-3">
-                <input type="text" class="message_form__input p-3" placeholder="Type a message" autofocus/>
-                <button class="message_form__button p-3" type="submit">
-                  Enter
-                </button>
-              </form>
+            <div class="row messageForm" style="">
+
+              <div class="col-12 p-0">
+
+                <div class="">
+
+                  <form class="message_form">
+                    <input type="text" class="message_form__input p-3" placeholder="Type a message" autofocus/>
+                    <button class="message_form__button p-3" type="submit">
+                      &#10148;
+                    </button>
+                  </form>
+
+                </div>
+
+              </div>
+
             </div>
-
-          </div>
-
-          <div class="col-1 h-100">
 
           </div>
 
         </div>
+
       </div>
 
     </section>
